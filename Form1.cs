@@ -12,9 +12,11 @@ namespace LearnWinForms
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+            displayMsg.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +27,14 @@ namespace LearnWinForms
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(displayMsg.Text != null)
+            {
+                displayMsg.Text = "";
+            }
         }
     }
 }
